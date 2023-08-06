@@ -13,8 +13,8 @@ public class Main {
     }
 
     private static void showBrands() {
-        ArrayList<String> marcas = new ArrayList<String>();
-        ArrayList<String> posiblesMarcas = new ArrayList<String>();
+        ArrayList<String> marcas = new ArrayList<>();
+        ArrayList<String> posiblesMarcas = new ArrayList<>();
         marcas.add("Remington");
         marcas.add("BlackBurry");
         marcas.add("Viceroy");
@@ -44,8 +44,8 @@ public class Main {
     }
 
     private static void showGuests() {
-    Set<String> invitados =new TreeSet<String>();
-    Set<String> posiblesInvitados = new TreeSet<String>();
+    Set<String> invitados =new TreeSet<>();
+    Set<String> posiblesInvitados = new TreeSet<>();
     invitados.add("Daniel");
     invitados.add("Paola");
     invitados.add("Facundo");
@@ -63,7 +63,7 @@ public class Main {
     }
 
     private static void showSweets() {
-    Map<String,Integer> sweets = new TreeMap<String,Integer>();
+    Map<String,Integer> sweets = new TreeMap<>();
     sweets.put("chocman", 100);
     sweets.put("trululú", 100);
     sweets.put("Centella", 100);
@@ -72,7 +72,7 @@ public class Main {
     sweets.put("Traga-traga", 150);
     sweets.put("Tableton", 5);
     int threshold = 100;
-    Map<String,Integer> filteredSweets = new TreeMap<String, Integer>();
+    Map<String,Integer> filteredSweets = new TreeMap<>();
         for (Map.Entry<String,Integer> entry : sweets.entrySet()) {
             if (entry.getValue() < threshold) {
                 filteredSweets.put(entry.getKey(), entry.getValue());
@@ -82,7 +82,7 @@ public class Main {
     }
 
     private static void showGames() {
-        Queue<String> juegos = new LinkedList<String>();
+        Queue<String> juegos = new LinkedList<>();
         juegos.add("Tombo");
         juegos.add("Congelado");
         juegos.add("Quemaditas");
